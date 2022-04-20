@@ -1,6 +1,6 @@
 const Header = () => {
    return (
-      <header className="fixed inset-0 h-20 text-white max-w-container mx-auto px-4 flex justify-between items-center">
+      <header className="fixed inset-0 h-20 max-w-container mx-auto px-4 flex justify-between items-center">
          <h1 className="text-xl font-bold">Portfolio</h1>
          <nav className="flex gap-12 items-center">
             <ul className="flex gap-12">
@@ -29,8 +29,8 @@ const Header = () => {
                id="lang-selector"
                className="text-black py-1 px-2 outline-none rounded-xl"
             >
-               <option value="portuguese">Português</option>
-               <option value="english">English</option>
+               <option value="pt">Português</option>
+               <option value="eng">English</option>
             </select>
          </nav>
       </header>
