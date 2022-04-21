@@ -2,8 +2,6 @@
   background-color: black;
   height: 20vh;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 .footer .container {
   display: flex;

@@ -2,13 +2,15 @@
    position: fixed;
    top: 0;
    width: 100%;
+   z-index: 100;
+   background-color: rgba(0, 0, 0, 0.2);
 
    .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-top: 1.5rem;
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
 
       .disappear {
          transform: translateY(-300%);
@@ -37,11 +39,18 @@
          display: flex;
          gap: var(--nav-gap);
 
+         .active {
+            color: var(--active-color);
+            transform: scale(1.2);
+         }
+
          li {
             transition: var(--transition-duration) transform ease-in-out;
 
             a {
-               transition: var(--transition-duration) color ease-in-out;
+               transition: var(--transition-duration) all ease-in-out;
+               transition-property: color, transform;
+               display: inline-block;
             }
 
             &:hover {

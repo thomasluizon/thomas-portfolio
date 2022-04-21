@@ -4,8 +4,9 @@
    --text-color: #eaeaea;
    --bg-color: #1d1f20;
    --main-color: #cb23f5;
+   --active-color: #f900e8;
    --transition-duration: 0.3s;
-   --container-width: 1024px;
+   --container-width: 1200px;
 }
 
 * {
@@ -19,6 +20,7 @@ html {
 
 body {
    background-color: var(--bg-color);
+   overflow-x: hidden;
 }
 
 .container {

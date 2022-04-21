@@ -3,5 +3,9 @@
    "nav-about": "About",
    "nav-projects": "Projects",
    "nav-contact": "Contact",
-   "copyright": "All rights reserved."
+   "copyright": "All rights reserved.",
+   "profile_desc": "Illustrative drawing that represents the owner of this portfolio.",
+   "hello": "Hi!",
+   "my_name": "I'm Thomas,",
+   "presentation": "Front-End developer."
 }

@@ -1,3 +1,8 @@
 #home {
-  background: white;
+  height: 100vh;
+}
+#home .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=home.css.map */
