@@ -1,28 +1,17 @@
 import './css/header.css';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import i18next from 'i18next';
+import Lang from './Lang';
 
 const Header = props => {
    const { t } = useTranslation();
    const [langMenu, setLangMenu] = useState(false);
 
-   const Lang = props => {
-      return (
-         <ul className="header__nav__lang-menu">
-            {props.languages.map(lang => (
-               <li key={lang.country_code}>
-                  <button onClick={() => i18next.changeLanguage(lang.code)}>
-                     <span
-                        className={`flag-icon flag-icon-${lang.country_code}`}
-                     ></span>
-                     {lang.name}
-                  </button>
-               </li>
-            ))}
-         </ul>
-      );
-   };
+   window.addEventListener('click', e => {
+      if (e.target != document.querySelector('#lang')) {
+         setLangMenu(false);
+      }
+   });
 
    return (
       <div className="container">
@@ -47,9 +36,12 @@ const Header = props => {
                   onClick={() => setLangMenu(!langMenu)}
                   className="header__nav__lang-btn"
                >
-                  <i className="bi bi-globe2"></i>
+                  <i id="lang" className="bi bi-globe2"></i>
                </button>
-               {langMenu && <Lang languages={props.languages} />}
+               <Lang
+                  style={langMenu ? '' : 'disappear'}
+                  languages={props.languages}
+               />
             </nav>
          </header>
       </div>

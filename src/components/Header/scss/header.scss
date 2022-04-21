@@ -7,12 +7,18 @@
    max-width: var(--container-width);
    padding: 1.5rem 1rem;
 
+   .disappear {
+      transform: translateX(150%);
+   }
+
    .header__title {
       font-size: 1.2rem;
       cursor: pointer;
-      transition: var(--transition-duration) color ease-in-out;
+      transition: var(--transition-duration) all ease-in-out;
+      transition-property: color, transform;
 
       &:hover {
+         transform: translateX(2px);
          color: var(--main-color);
       }
    }
@@ -21,35 +27,64 @@
       --nav-gap: 2.5rem;
       display: flex;
       gap: var(--nav-gap);
+      position: relative;
    }
 
    .header__nav__menu {
       display: flex;
       gap: var(--nav-gap);
 
-      li a {
-         transition: var(--transition-duration) color;
+      li {
+         transition: var(--transition-duration) transform ease-in-out;
+
+         a {
+            transition: var(--transition-duration) color ease-in-out;
+         }
+
          &:hover {
-            color: var(--main-color);
+            a {
+               color: var(--main-color);
+            }
+            transform: translateX(2px);
          }
       }
    }
 
    .header__nav__lang-btn {
+      transition: var(--transition-duration) transform ease-in-out;
+
       i {
-         transition: var(--transition-duration) color;
+         transition: var(--transition-duration) color ease-in-out;
       }
-      &:hover i {
-         color: var(--main-color);
+
+      &:hover {
+         transform: translateX(2px);
+         i {
+            color: var(--main-color);
+         }
       }
    }
 
    .header__nav__lang-menu {
       background: white;
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      padding: 0.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border-radius: 0.25rem;
+      transition: var(--transition-duration) transform ease-in-out;
+
       button {
          color: black;
          display: flex;
          gap: 5px;
+         transition: var(--transition-duration) color ease-in-out;
+         &:hover {
+            color: var(--main-color);
+         }
       }
    }
 }
