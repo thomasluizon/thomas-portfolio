@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Header from '../components/Header/Header';
-import Home from '../components/Home';
+import Home from '../components/Home/Home';
+import Footer from '../components/Footer/Footer';
 
 const App = () => {
    const languages = [
@@ -19,7 +20,7 @@ const App = () => {
    ];
 
    useEffect(() => {
-      Aos.init({ duration: 1000 });
+      Aos.init({ duration: 2500 });
    }, []);
 
    return (
@@ -28,6 +29,7 @@ const App = () => {
          <main>
             <Home />
          </main>
+         <Footer />
       </>
    );
 };

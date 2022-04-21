@@ -1,60 +1,63 @@
 .header {
   position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: var(--container-width);
-  padding: 1.5rem 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
-.header .disappear {
-  transform: translateX(150%);
+.header .container .disappear {
+  transform: translateY(-300%);
 }
-.header .header__title {
+.header .container .header__title {
   font-size: 1.2rem;
   cursor: pointer;
   transition: var(--transition-duration) all ease-in-out;
   transition-property: color, transform;
 }
-.header .header__title:hover {
+.header .container .header__title:hover {
   transform: translateX(2px);
   color: var(--main-color);
 }
-.header .header__nav {
+.header .container .header__nav {
   --nav-gap: 2.5rem;
   display: flex;
   gap: var(--nav-gap);
   position: relative;
 }
-.header .header__nav__menu {
+.header .container .header__nav__menu {
   display: flex;
   gap: var(--nav-gap);
 }
-.header .header__nav__menu li {
+.header .container .header__nav__menu li {
   transition: var(--transition-duration) transform ease-in-out;
 }
-.header .header__nav__menu li a {
+.header .container .header__nav__menu li a {
   transition: var(--transition-duration) color ease-in-out;
 }
-.header .header__nav__menu li:hover {
+.header .container .header__nav__menu li:hover {
   transform: translateX(2px);
 }
-.header .header__nav__menu li:hover a {
+.header .container .header__nav__menu li:hover a {
   color: var(--main-color);
 }
-.header .header__nav__lang-btn {
+.header .container .header__nav__lang-btn {
   transition: var(--transition-duration) transform ease-in-out;
 }
-.header .header__nav__lang-btn i {
+.header .container .header__nav__lang-btn i {
   transition: var(--transition-duration) color ease-in-out;
 }
-.header .header__nav__lang-btn:hover {
+.header .container .header__nav__lang-btn:hover {
   transform: translateX(2px);
 }
-.header .header__nav__lang-btn:hover i {
+.header .container .header__nav__lang-btn:hover i {
   color: var(--main-color);
 }
-.header .header__nav__lang-menu {
+.header .container .header__nav__lang-menu {
   background: white;
   position: absolute;
   top: 2rem;
@@ -66,12 +69,14 @@
   border-radius: 0.25rem;
   transition: var(--transition-duration) transform ease-in-out;
 }
-.header .header__nav__lang-menu button {
+.header .container .header__nav__lang-menu button {
   color: black;
   display: flex;
   gap: 5px;
-  transition: var(--transition-duration) color ease-in-out;
+  transition: var(--transition-duration) all ease-in-out;
+  transition-property: color, transform;
 }
-.header .header__nav__lang-menu button:hover {
+.header .container .header__nav__lang-menu button:hover {
+  transform: translateX(2px);
   color: var(--main-color);
 }/*# sourceMappingURL=header.css.map */

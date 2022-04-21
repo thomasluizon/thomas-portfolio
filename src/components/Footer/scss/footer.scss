@@ -1,0 +1,32 @@
+.footer {
+   background-color: black;
+   height: 20vh;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+
+   .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer_socials {
+         display: flex;
+         gap: 2rem;
+
+         li {
+            transition: var(--transition-duration) transform ease-in-out;
+            i {
+               font-size: 1.5rem;
+               transition: var(--transition-duration) color ease-in-out;
+            }
+            &:hover {
+               transform: translateX(2px);
+               i {
+                  color: var(--main-color);
+               }
+            }
+         }
+      }
+   }
+}

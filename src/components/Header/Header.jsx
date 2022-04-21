@@ -14,22 +14,22 @@ const Header = props => {
    });
 
    return (
-      <div className="container">
-         <header className="header">
+      <header className="header" data-aos="slide-down">
+         <div className="container">
             <h1 className="header__title">Portfolio</h1>
             <nav className="header__nav">
                <ul className="header__nav__menu">
                   <li>
-                     <a>{t('nav-home')}</a>
+                     <a href="#home">{t('nav-home')}</a>
                   </li>
                   <li>
-                     <a>{t('nav-about')}</a>
+                     <a href="#about">{t('nav-about')}</a>
                   </li>
                   <li>
-                     <a>{t('nav-projects')}</a>
+                     <a href="#projects">{t('nav-projects')}</a>
                   </li>
                   <li>
-                     <a>{t('nav-contact')}</a>
+                     <a href="#contact">{t('nav-contact')}</a>
                   </li>
                </ul>
                <button
@@ -43,8 +43,8 @@ const Header = props => {
                   languages={props.languages}
                />
             </nav>
-         </header>
-      </div>
+         </div>
+      </header>
    );
 };
 

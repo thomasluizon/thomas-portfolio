@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .container .footer_socials {
+  display: flex;
+  gap: 2rem;
+}
+.footer .container .footer_socials li {
+  transition: var(--transition-duration) transform ease-in-out;
+}
+.footer .container .footer_socials li i {
+  font-size: 1.5rem;
+  transition: var(--transition-duration) color ease-in-out;
+}
+.footer .container .footer_socials li:hover {
+  transform: translateX(2px);
+}
+.footer .container .footer_socials li:hover i {
+  color: var(--main-color);
+}/*# sourceMappingURL=footer.css.map */

@@ -1,89 +1,95 @@
 .header {
    position: fixed;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   top: 0;
    width: 100%;
-   max-width: var(--container-width);
-   padding: 1.5rem 1rem;
 
-   .disappear {
-      transform: translateX(150%);
-   }
+   .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
 
-   .header__title {
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: var(--transition-duration) all ease-in-out;
-      transition-property: color, transform;
-
-      &:hover {
-         transform: translateX(2px);
-         color: var(--main-color);
+      .disappear {
+         transform: translateY(-300%);
       }
-   }
 
-   .header__nav {
-      --nav-gap: 2.5rem;
-      display: flex;
-      gap: var(--nav-gap);
-      position: relative;
-   }
+      .header__title {
+         font-size: 1.2rem;
+         cursor: pointer;
+         transition: var(--transition-duration) all ease-in-out;
+         transition-property: color, transform;
 
-   .header__nav__menu {
-      display: flex;
-      gap: var(--nav-gap);
+         &:hover {
+            transform: translateX(2px);
+            color: var(--main-color);
+         }
+      }
 
-      li {
+      .header__nav {
+         --nav-gap: 2.5rem;
+         display: flex;
+         gap: var(--nav-gap);
+         position: relative;
+      }
+
+      .header__nav__menu {
+         display: flex;
+         gap: var(--nav-gap);
+
+         li {
+            transition: var(--transition-duration) transform ease-in-out;
+
+            a {
+               transition: var(--transition-duration) color ease-in-out;
+            }
+
+            &:hover {
+               a {
+                  color: var(--main-color);
+               }
+               transform: translateX(2px);
+            }
+         }
+      }
+
+      .header__nav__lang-btn {
          transition: var(--transition-duration) transform ease-in-out;
 
-         a {
+         i {
             transition: var(--transition-duration) color ease-in-out;
          }
 
          &:hover {
-            a {
+            transform: translateX(2px);
+            i {
                color: var(--main-color);
             }
-            transform: translateX(2px);
          }
       }
-   }
 
-   .header__nav__lang-btn {
-      transition: var(--transition-duration) transform ease-in-out;
-
-      i {
-         transition: var(--transition-duration) color ease-in-out;
-      }
-
-      &:hover {
-         transform: translateX(2px);
-         i {
-            color: var(--main-color);
-         }
-      }
-   }
-
-   .header__nav__lang-menu {
-      background: white;
-      position: absolute;
-      top: 2rem;
-      right: 0;
-      padding: 0.3rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      border-radius: 0.25rem;
-      transition: var(--transition-duration) transform ease-in-out;
-
-      button {
-         color: black;
+      .header__nav__lang-menu {
+         background: white;
+         position: absolute;
+         top: 2rem;
+         right: 0;
+         padding: 0.3rem;
          display: flex;
-         gap: 5px;
-         transition: var(--transition-duration) color ease-in-out;
-         &:hover {
-            color: var(--main-color);
+         flex-direction: column;
+         gap: 0.5rem;
+         border-radius: 0.25rem;
+         transition: var(--transition-duration) transform ease-in-out;
+
+         button {
+            color: black;
+            display: flex;
+            gap: 5px;
+            transition: var(--transition-duration) all ease-in-out;
+            transition-property: color, transform;
+            &:hover {
+               transform: translateX(2px);
+               color: var(--main-color);
+            }
          }
       }
    }
