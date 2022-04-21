@@ -1,0 +1,55 @@
+.header {
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   max-width: var(--container-width);
+   padding: 1.5rem 1rem;
+
+   .header__title {
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: var(--transition-duration) color ease-in-out;
+
+      &:hover {
+         color: var(--main-color);
+      }
+   }
+
+   .header__nav {
+      --nav-gap: 2.5rem;
+      display: flex;
+      gap: var(--nav-gap);
+   }
+
+   .header__nav__menu {
+      display: flex;
+      gap: var(--nav-gap);
+
+      li a {
+         transition: var(--transition-duration) color;
+         &:hover {
+            color: var(--main-color);
+         }
+      }
+   }
+
+   .header__nav__lang-btn {
+      i {
+         transition: var(--transition-duration) color;
+      }
+      &:hover i {
+         color: var(--main-color);
+      }
+   }
+
+   .header__nav__lang-menu {
+      background: white;
+      button {
+         color: black;
+         display: flex;
+         gap: 5px;
+      }
+   }
+}

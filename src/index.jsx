@@ -8,7 +8,8 @@ import HttpApi from 'i18next-http-backend';
 import App from './views/App';
 import './reset.css';
 import './index.css';
-import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'flag-icon-css/css/flag-icons.min.css';
 
 i18n
    .use(initReactI18next)
