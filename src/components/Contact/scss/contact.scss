@@ -120,3 +120,11 @@
       }
    }
 }
+
+@media screen and (max-width: 350px) {
+   #contact .container {
+      .contact__info {
+         margin-bottom: 3rem;
+      }
+   }
+}

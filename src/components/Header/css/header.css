@@ -102,6 +102,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .header {
+    position: static;
+  }
   .header .container .header__drawer-btn {
     display: block;
   }

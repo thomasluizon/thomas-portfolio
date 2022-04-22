@@ -24,4 +24,13 @@
 }
 .footer .container .footer_socials li:hover i {
   color: var(--main-color);
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    height: 30vh;
+  }
+  .footer .container .footer_socials {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=footer.css.map */

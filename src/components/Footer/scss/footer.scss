@@ -2,7 +2,6 @@
    background-color: black;
    height: 20vh;
    width: 100%;
-
    .container {
       display: flex;
       justify-content: space-between;
@@ -25,6 +24,15 @@
                }
             }
          }
+      }
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .footer {
+      height: 30vh;
+      .container .footer_socials {
+         flex-direction: column;
       }
    }
 }

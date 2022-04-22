@@ -71,7 +71,7 @@
     gap: 2rem;
   }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 500px) {
   #projects .container .projects__project {
     padding: 0;
     border: none;

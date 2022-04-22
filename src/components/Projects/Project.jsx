@@ -12,7 +12,7 @@ const Project = props => {
             <div className="project__btns">
                <a target="_blank" href={props.repo}>
                   <i className="bi bi-github"></i>
-                  {t('repo')}
+                  Repo
                </a>
                <a target="_blank" href={props.demo}>
                   {t('demo')}

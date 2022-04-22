@@ -118,13 +118,17 @@
 }
 
 @media screen and (max-width: 900px) {
-   .header .container {
-      .header__drawer-btn {
-         display: block;
-      }
+   .header {
+      position: static;
 
-      .header__nav__menu {
-         display: none;
+      .container {
+         .header__drawer-btn {
+            display: block;
+         }
+
+         .header__nav__menu {
+            display: none;
+         }
       }
    }
 }
