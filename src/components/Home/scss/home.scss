@@ -6,6 +6,24 @@
       align-items: center;
       justify-content: space-between;
 
+      .home__intro {
+         max-width: 450px;
+      }
+
+      .home__intro__greetings {
+         font-weight: lighter;
+         font-size: 1.5rem;
+      }
+
+      .home__intro__name {
+         font-weight: bold;
+         font-size: 2.5rem;
+      }
+
+      .home__intro__presentation {
+         font-size: 2rem;
+      }
+
       .home__profile {
          img {
             border-radius: 50%;

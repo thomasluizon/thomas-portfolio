@@ -8,9 +8,9 @@ const Home = () => {
       <section id="home">
          <div className="container">
             <div className="home__intro">
-               <p>{t('hello')}</p>
-               <h2>{t('my_name')}</h2>
-               <p>{t('presentation')}</p>
+               <p className="home__intro__greetings">{t('hello')} 👋</p>
+               <h2 className="home__intro__name">{t('my_name')}</h2>
+               <p className="home__intro__presentation">{t('presentation')}</p>
             </div>
             <div className="home__profile" data-aos="slide-left">
                <img src="assets/profile-image.png" alt={t('profile_desc')} />

@@ -6,6 +6,20 @@
   align-items: center;
   justify-content: space-between;
 }
+#home .container .home__intro {
+  max-width: 450px;
+}
+#home .container .home__intro__greetings {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+#home .container .home__intro__name {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+#home .container .home__intro__presentation {
+  font-size: 2rem;
+}
 #home .container .home__profile img {
   border-radius: 50%;
 }/*# sourceMappingURL=home.css.map */

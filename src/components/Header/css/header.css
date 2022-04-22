@@ -6,11 +6,12 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 .header .container {
+  --padding-y-header: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: var(--padding-y-header);
+  padding-bottom: var(--padding-y-header);
 }
 .header .container .disappear {
   transform: translateY(-300%);
