@@ -9,7 +9,7 @@ const Contact = () => {
    return (
       <section id="contact">
          <div className="container">
-            <h2 className="title" data-aos="slide-to-left">
+            <h2 className="contact__title" data-aos="slide-to-left">
                {t('contact')}
             </h2>
             <p className="contact__desc" data-aos="slide-to-left">

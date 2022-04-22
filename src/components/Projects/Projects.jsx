@@ -8,7 +8,7 @@ const Projects = () => {
    return (
       <section id="projects">
          <div className="container">
-            <h2 className="title" data-aos="slide-to-left">
+            <h2 className="projects__title" data-aos="slide-to-left">
                {t('my_projects')}
             </h2>
             <div className="projects__container">

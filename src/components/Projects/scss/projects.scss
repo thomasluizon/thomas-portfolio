@@ -9,6 +9,13 @@
       align-items: center;
       gap: 2rem;
 
+      .projects__title {
+         transition: var(--animate-duration);
+         font-weight: lighter;
+         font-size: 2.5rem;
+         text-align: center;
+      }
+
       .projects__container {
          display: grid;
          width: 100%;
@@ -17,6 +24,7 @@
       }
 
       .projects__project {
+         --animate-duration: 1s;
          transition: var(--animate-duration);
          cursor: pointer;
 

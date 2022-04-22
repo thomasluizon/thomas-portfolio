@@ -9,6 +9,12 @@
   align-items: center;
   gap: 2rem;
 }
+#projects .container .projects__title {
+  transition: var(--animate-duration);
+  font-weight: lighter;
+  font-size: 2.5rem;
+  text-align: center;
+}
 #projects .container .projects__container {
   display: grid;
   width: 100%;
@@ -16,6 +22,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 #projects .container .projects__project {
+  --animate-duration: 1s;
   transition: var(--animate-duration);
   cursor: pointer;
   padding: 1.5rem 2.5rem;

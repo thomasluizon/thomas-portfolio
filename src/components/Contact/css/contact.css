@@ -5,12 +5,21 @@
   font-weight: lighter;
 }
 
+#contact {
+  --animate-duration: 1.4s;
+}
 #contact .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+#contact .container .contact__title {
+  transition: var(--animate-duration);
+  font-weight: lighter;
+  font-size: 2.5rem;
+  text-align: center;
 }
 #contact .container .contact__desc {
   transition: var(--animate-duration);

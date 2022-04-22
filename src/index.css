@@ -7,7 +7,7 @@
    --active-color: #f900e8;
    --transition-duration: 0.3s;
    --container-width: 1200px;
-   --animate-duration: 2s;
+   --animate-duration: 1.5s;
 }
 
 * {
@@ -57,11 +57,4 @@ section {
 *::-webkit-scrollbar-thumb {
    background-color: var(--main-color);
    border-radius: 16px;
-}
-
-.title {
-   transition: var(--animate-duration);
-   font-weight: lighter;
-   font-size: 2.5rem;
-   text-align: center;
 }
