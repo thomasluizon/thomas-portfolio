@@ -17,7 +17,7 @@ const About = () => {
                </p>
             </div>
             <div data-aos="slide-to-left" className="about__img">
-               <img src="assets/imgs/coding.gif" alt={t('gif')} />
+               <img src="../assets/imgs/coding.gif" alt={t('gif')} />
             </div>
          </div>
       </section>
