@@ -1,0 +1,47 @@
+[33mcommit df9cc8577b1b42dd93eefa2cb4ee3e7abd1bab03[m[33m ([m[1;36mHEAD -> [m[1;32mroute[m[33m)[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Thu Apr 21 21:06:45 2022 -0300
+
+    router
+
+[33mcommit 67651e4c11a431a046aee5043aa6539abe679034[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Thu Apr 21 20:20:26 2022 -0300
+
+    before router
+
+[33mcommit a250d40e9130bc71797b9fef0ab9e8661f407741[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Thu Apr 21 19:26:01 2022 -0300
+
+    added footer and header animation
+
+[33mcommit 89d230917b4463fe7620bde6b2850be1e61feaf4[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Thu Apr 21 17:32:40 2022 -0300
+
+    finished header
+
+[33mcommit 2b9dc2f48a71201e92285e255f86b58412fda7c2[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Thu Apr 21 14:46:04 2022 -0300
+
+    added change language feature
+
+[33mcommit 335a0e0d4a2e93eaf36fbcc826f9d952372c8584[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Thu Apr 21 13:31:50 2022 -0300
+
+    changed structure
+
+[33mcommit c87fb842e4589fc03716f5742903a9cc4af3a5dd[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Wed Apr 20 17:57:42 2022 -0300
+
+    added section main
+
+[33mcommit c001d05549da73713d36ed10d37a90b500b666ab[m
+Author: Thomas Luizon <thomaslrgregorio@gmail.com>
+Date:   Wed Apr 20 17:37:32 2022 -0300
+
+    first commit

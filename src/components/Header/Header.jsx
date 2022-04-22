@@ -12,6 +12,28 @@ const Header = props => {
          setLangMenu(false);
       }
    });
+   const sections = document.querySelectorAll('section');
+   window.addEventListener('scroll', () => {
+      const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4;
+      sections.forEach(section => {
+         const sectionTop = section.offsetTop;
+         const sectionHeight = section.offsetHeight;
+         const sectionId = section.getAttribute('id');
+
+         const checkpointStart = checkpoint >= sectionTop;
+         const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
+
+         if (checkpointStart && checkpointEnd) {
+            document
+               .querySelector(`.header__nav__menu li a[href*='${sectionId}']`)
+               .classList.add('active');
+         } else {
+            document
+               .querySelector(`.header__nav__menu li a[href*='${sectionId}']`)
+               .classList.remove('active');
+         }
+      });
+   });
 
    return (
       <header className="header" data-aos="slide-down">
@@ -20,7 +42,9 @@ const Header = props => {
             <nav className="header__nav">
                <ul className="header__nav__menu">
                   <li>
-                     <a href="#home">{t('nav-home')}</a>
+                     <a className="active" href="#home">
+                        {t('nav-home')}
+                     </a>
                   </li>
                   <li>
                      <a href="#about">{t('nav-about')}</a>

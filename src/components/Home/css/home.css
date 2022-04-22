@@ -5,4 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+#home .container .home__profile img {
+  border-radius: 50%;
 }/*# sourceMappingURL=home.css.map */
