@@ -8,11 +8,20 @@ const Home = () => {
       <section id="home">
          <div className="container">
             <div className="home__intro">
-               <p className="home__intro__greetings">{t('hello')} 👋</p>
-               <h2 className="home__intro__name">{t('my_name')}</h2>
-               <p className="home__intro__presentation">{t('presentation')}</p>
+               <p data-aos="slide-from-top" className="home__intro__greetings">
+                  {t('hello')} 👋
+               </p>
+               <h2 data-aos="slide-from-top" className="home__intro__name">
+                  {t('my_name')}
+               </h2>
+               <p
+                  data-aos="slide-from-top"
+                  className="home__intro__presentation"
+               >
+                  {t('presentation')}
+               </p>
             </div>
-            <div className="home__profile" data-aos="slide-left">
+            <div className="home__profile" data-aos="slide-to-left">
                <img src="assets/profile-image.png" alt={t('profile_desc')} />
             </div>
          </div>

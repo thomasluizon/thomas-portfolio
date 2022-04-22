@@ -7,6 +7,7 @@
    --active-color: #f900e8;
    --transition-duration: 0.3s;
    --container-width: 1200px;
+   --animate-duration: 2s;
 }
 
 * {

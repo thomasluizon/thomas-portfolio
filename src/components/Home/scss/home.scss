@@ -8,26 +8,55 @@
 
       .home__intro {
          max-width: 450px;
+         display: flex;
+         flex-direction: column;
+         gap: 0.8rem;
       }
 
       .home__intro__greetings {
+         transition: var(--animate-duration);
          font-weight: lighter;
          font-size: 1.5rem;
       }
 
       .home__intro__name {
+         transition: var(--animate-duration);
+         transition-delay: 1.25s;
          font-weight: bold;
          font-size: 2.5rem;
       }
 
       .home__intro__presentation {
+         transition: var(--animate-duration);
+         transition-delay: 2.5s;
          font-size: 2rem;
       }
 
       .home__profile {
+         transition: var(--animate-duration);
          img {
             border-radius: 50%;
          }
       }
+   }
+}
+
+[data-aos='slide-to-left'] {
+   opacity: 0;
+   transform: translateX(10rem);
+   transition-property: transform, opacity;
+   &.aos-animate {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+[data-aos='slide-from-top'] {
+   opacity: 0;
+   transform: translateY(-10rem);
+   transition-property: transform, opacity;
+   &.aos-animate {
+      opacity: 1;
+      transform: translateY(0);
    }
 }
