@@ -7,5 +7,11 @@
    "profile_desc": "Illustrative drawing that represents the owner of this portfolio.",
    "hello": "Hi!",
    "my_name": "I'm Thomas,",
-   "presentation": "Front-End developer."
+   "presentation": "Front-End developer.",
+   "who_am_i": "Who am i?",
+   "about_me": "About me",
+   "desc_1": "I'm Thomas Luizon, a beginner Front-End developer looking to put my technical skills into practice. I'm passionate about programming, I love to study and learn new technologies.",
+   "desc_2": "I develop web applications using HTML, CSS, JavaScript and React, I also have knowledge in Tailwind CSS and Sass.",
+   "desc_3": "I always try to achieve the best user experience, making the application fluid and following clean code standards to make maintenance easier.",
+   "gif": "Animated gif of a boy programming."
 }

@@ -3,6 +3,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Header from '../components/Header/Header';
 import Home from '../components/Home/Home';
+import About from '../components/About/About';
 import Footer from '../components/Footer/Footer';
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
          <Header languages={languages} />
          <main>
             <Home />
+            <About />
          </main>
          <Footer />
       </>

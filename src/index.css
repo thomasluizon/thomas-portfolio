@@ -29,6 +29,10 @@ body {
    overflow-x: hidden;
 }
 
+section {
+   height: 100vh;
+}
+
 .container {
    max-width: var(--container-width);
    margin: 0 auto;
@@ -37,20 +41,17 @@ body {
    height: 100%;
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
 * {
    scrollbar-width: auto;
    scrollbar-color: var(--main-color) #251225;
 }
 
-/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
    width: 14px;
 }
 
 *::-webkit-scrollbar-track {
-   background: black;
+   background: rgba(0, 0, 0, 0.832);
 }
 
 *::-webkit-scrollbar-thumb {

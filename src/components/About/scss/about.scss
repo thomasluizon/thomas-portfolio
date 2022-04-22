@@ -1,0 +1,43 @@
+#about {
+   .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .about__desc {
+         max-width: 400px;
+         display: flex;
+         flex-direction: column;
+         gap: 1.5rem;
+         transition: var(--animate-duration);
+         h3 {
+            color: var(--main-color);
+            font-weight: lighter;
+            font-size: 1.6rem;
+         }
+
+         h2 {
+            font-weight: bold;
+            font-size: 2.5rem;
+         }
+
+         p {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 1.2rem;
+            text-align: justify;
+            letter-spacing: 0.8px;
+            font-weight: lighter;
+         }
+      }
+
+      .about__img {
+         transition: var(--animate-duration);
+         img {
+            border-radius: 50%;
+            max-width: 480px;
+         }
+      }
+   }
+}
