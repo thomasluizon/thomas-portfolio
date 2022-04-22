@@ -17,17 +17,21 @@
 }
 #projects .container .projects__project {
   transition: var(--animate-duration);
+  cursor: pointer;
   padding: 1.5rem 2.5rem;
   border: 0.2rem solid white;
   border-radius: 0.5rem;
   width: 100%;
-  min-height: 500px;
   max-height: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+}
+#projects .container .projects__project:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
 }
 #projects .container .projects__project img {
   border-radius: 0.5rem;
@@ -57,4 +61,17 @@
 }
 #projects .container .projects__project .project__btns a:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 900px) {
+  #projects .container .projects__container {
+    grid-template-columns: none;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  #projects .container .projects__project {
+    padding: 0;
+    border: none;
+  }
 }/*# sourceMappingURL=projects.css.map */

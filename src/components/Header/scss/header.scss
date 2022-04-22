@@ -6,6 +6,18 @@
    background-color: rgba(0, 0, 0, 0.2);
 
    .container {
+      .header__drawer-btn {
+         display: none;
+         cursor: pointer;
+         transition: var(--transition-duration) all ease-in-out;
+         transition-property: color, transform;
+         font-size: 1.5rem;
+         &:hover {
+            color: var(--main-color);
+            transform: translateX(2px);
+         }
+      }
+
       --padding-y-header: 2.5rem;
       display: flex;
       justify-content: space-between;
@@ -101,6 +113,18 @@
                color: var(--main-color);
             }
          }
+      }
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .header .container {
+      .header__drawer-btn {
+         display: block;
+      }
+
+      .header__nav__menu {
+         display: none;
       }
    }
 }

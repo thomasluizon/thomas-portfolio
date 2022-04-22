@@ -13,6 +13,17 @@
   padding-top: var(--padding-y-header);
   padding-bottom: var(--padding-y-header);
 }
+.header .container .header__drawer-btn {
+  display: none;
+  cursor: pointer;
+  transition: var(--transition-duration) all ease-in-out;
+  transition-property: color, transform;
+  font-size: 1.5rem;
+}
+.header .container .header__drawer-btn:hover {
+  color: var(--main-color);
+  transform: translateX(2px);
+}
 .header .container .disappear {
   transform: translateY(-300%);
 }
@@ -88,4 +99,13 @@
 .header .container .header__nav__lang-menu button:hover {
   transform: translateX(2px);
   color: var(--main-color);
+}
+
+@media screen and (max-width: 900px) {
+  .header .container .header__drawer-btn {
+    display: block;
+  }
+  .header .container .header__nav__menu {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */

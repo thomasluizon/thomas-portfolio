@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 #home .container .home__intro {
   max-width: 450px;
@@ -34,7 +35,7 @@
 
 [data-aos=slide-to-left] {
   opacity: 0;
-  transform: translateX(10rem);
+  transform: translateX(-10rem);
   transition-property: transform, opacity;
 }
 [data-aos=slide-to-left].aos-animate {
@@ -50,4 +51,16 @@
 [data-aos=slide-from-top].aos-animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (max-width: 900px) {
+  #home .container {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 520px) {
+  #home .container .home__profile img {
+    width: 300px;
+  }
 }/*# sourceMappingURL=home.css.map */

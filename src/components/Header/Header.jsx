@@ -6,6 +6,7 @@ import Lang from './Lang';
 const Header = props => {
    const { t } = useTranslation();
    const [langMenu, setLangMenu] = useState(false);
+   const [drawer, setDrawer] = useState(false);
 
    window.addEventListener('click', e => {
       if (e.target != document.querySelector('#lang')) {

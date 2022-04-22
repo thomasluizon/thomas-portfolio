@@ -25,6 +25,7 @@
          justify-content: space-between;
          align-items: flex-start;
          width: 100%;
+         gap: 1rem;
       }
 
       .contact__info {
@@ -96,6 +97,24 @@
             transition: var(--transition-duration) transform ease-in-out;
             &:hover {
                transform: scale(1.1);
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 900px) {
+   #contact {
+      .container {
+         .contact__form-wrapper {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 2.5rem;
+         }
+
+         .contact__form {
+            button {
+               width: 100%;
             }
          }
       }

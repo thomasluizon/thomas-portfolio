@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 #about .container .about__desc {
   max-width: 400px;
@@ -34,4 +35,13 @@
 #about .container .about__img img {
   border-radius: 50%;
   max-width: 480px;
+}
+
+@media screen and (max-width: 900px) {
+  #about .container {
+    justify-content: center;
+  }
+  #about .container .about__img img {
+    display: none;
+  }
 }/*# sourceMappingURL=about.css.map */
