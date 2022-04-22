@@ -49,13 +49,15 @@
 #projects .container .projects__project .project__btns {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
 }
 #projects .container .projects__project .project__btns a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   background: var(--main-color);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 0.25rem;
   transition: var(--transition-duration) transform ease-in-out;
 }
