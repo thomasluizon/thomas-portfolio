@@ -1,5 +1,6 @@
 import './css/about.css';
 import { useTranslation } from 'react-i18next';
+import codingGif from '../../../assets/imgs/coding-gif';
 
 const About = () => {
    const { t } = useTranslation();
@@ -17,7 +18,7 @@ const About = () => {
                </p>
             </div>
             <div data-aos="slide-to-left" className="about__img">
-               <img src="../../../assets/imgs/coding.gif" alt={t('gif')} />
+               <img src={codingGif} alt={t('gif')} />
             </div>
          </div>
       </section>

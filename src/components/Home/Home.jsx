@@ -1,5 +1,6 @@
 import './css/home.css';
 import { useTranslation } from 'react-i18next';
+import profileImage from '../../../assets/imgs/profile-image.png';
 
 const Home = () => {
    const { t } = useTranslation();
@@ -22,10 +23,7 @@ const Home = () => {
                </p>
             </div>
             <div className="home__profile" data-aos="slide-to-left">
-               <img
-                  src="../../../assets/imgs/profile-image.png"
-                  alt={t('profile_desc')}
-               />
+               <img src={profileImage} alt={t('profile_desc')} />
             </div>
          </div>
       </section>
