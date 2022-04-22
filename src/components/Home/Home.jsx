@@ -23,7 +23,7 @@ const Home = () => {
             </div>
             <div className="home__profile" data-aos="slide-to-left">
                <img
-                  src="/assets/imgs/profile-image.png"
+                  src="../../../assets/imgs/profile-image.png"
                   alt={t('profile_desc')}
                />
             </div>
