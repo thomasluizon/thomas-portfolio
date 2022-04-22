@@ -1,6 +1,6 @@
 import './css/about.css';
 import { useTranslation } from 'react-i18next';
-import codingGif from '../../../assets/imgs/coding-gif';
+import codingGif from '../../../assets/imgs/coding.gif';
 
 const About = () => {
    const { t } = useTranslation();
