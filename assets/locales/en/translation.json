@@ -13,5 +13,10 @@
    "desc_1": "I'm Thomas Luizon, a beginner Front-End developer looking to put my technical skills into practice. I'm passionate about programming, I love to study and learn new technologies.",
    "desc_2": "I develop web applications using HTML, CSS, JavaScript and React, I also have knowledge in Tailwind CSS and Sass.",
    "desc_3": "I always try to achieve the best user experience, making the application fluid and following clean code standards to make maintenance easier.",
-   "gif": "Animated gif of a boy programming."
+   "gif": "Animated gif of a boy programming.",
+   "my_projects": "My projects",
+   "repo": "Repository",
+   "demo": "Demo site",
+   "calculator_desc": "Functional calculator made with HTML, CSS, JavaScript and React.",
+   "notes_desc": "Interactive notes app with theme switching, Regex search, state management and local storage saving."
 }

@@ -22,7 +22,10 @@ const Home = () => {
                </p>
             </div>
             <div className="home__profile" data-aos="slide-to-left">
-               <img src="assets/profile-image.png" alt={t('profile_desc')} />
+               <img
+                  src="assets/imgs/profile-image.png"
+                  alt={t('profile_desc')}
+               />
             </div>
          </div>
       </section>
