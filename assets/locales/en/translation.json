@@ -25,5 +25,6 @@
    "full_name": "Full name",
    "phone": "Phone",
    "enter_message": "Enter your message",
-   "submit": "Submit"
+   "submit": "Submit",
+   "form_submitted": "Thank's for the contact! I will answer you as soon as possible!"
 }

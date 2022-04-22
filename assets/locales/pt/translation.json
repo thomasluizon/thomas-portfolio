@@ -25,5 +25,6 @@
    "full_name": "Nome completo",
    "phone": "Celular",
    "enter_message": "Digite sua mensagem",
-   "submit": "Enviar"
+   "submit": "Enviar",
+   "form_submitted": "Obrigado pelo contato! Irei te responder o mais rápido possível!"
 }
