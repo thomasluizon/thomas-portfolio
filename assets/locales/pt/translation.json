@@ -18,5 +18,12 @@
    "repo": "Repositório",
    "demo": "Demonstração",
    "calculator_desc": "Calculadora funcional feita com HTML, CSS, JavaScript e React.",
-   "notes_desc": "Aplicativo de notas interativo, com troca de tema, pesquisa por Regex e gerenciamento de estado e memória."
+   "notes_desc": "Aplicativo de notas interativo, com troca de tema, pesquisa por Regex e gerenciamento de estado e memória.",
+   "contact": "Entre em contato",
+   "contact_desc": "Estou disponível para transformar seu projeto dos sonhos em realidade, caso queira solicitar um serviço ou entrar em contato utilize o formulário.",
+   "brasil": "Brasil",
+   "full_name": "Nome completo",
+   "phone": "Celular",
+   "enter_message": "Digite sua mensagem",
+   "submit": "Enviar"
 }

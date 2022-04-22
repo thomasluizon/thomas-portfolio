@@ -58,3 +58,9 @@ section {
    background-color: var(--main-color);
    border-radius: 16px;
 }
+
+.title {
+   transition: var(--animate-duration);
+   font-weight: lighter;
+   font-size: 2.5rem;
+}

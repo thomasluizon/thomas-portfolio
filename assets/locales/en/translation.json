@@ -18,5 +18,12 @@
    "repo": "Repository",
    "demo": "Demo site",
    "calculator_desc": "Functional calculator made with HTML, CSS, JavaScript and React.",
-   "notes_desc": "Interactive notes app with theme switching, Regex search, state management and local storage saving."
+   "notes_desc": "Interactive notes app with theme switching, Regex search, state management and local storage saving.",
+   "contact": "Get in touch",
+   "contact_desc": "I am available to turn your dream project into reality, if you want to request a service or get in touch, use the form.",
+   "brasil": "Brazil",
+   "full_name": "Full name",
+   "phone": "Phone",
+   "enter_message": "Enter your message",
+   "submit": "Submit"
 }

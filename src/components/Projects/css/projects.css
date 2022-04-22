@@ -9,11 +9,6 @@
   align-items: center;
   gap: 2rem;
 }
-#projects .container h2 {
-  transition: var(--animate-duration);
-  font-weight: lighter;
-  font-size: 2.5rem;
-}
 #projects .container .projects__container {
   display: grid;
   width: 100%;

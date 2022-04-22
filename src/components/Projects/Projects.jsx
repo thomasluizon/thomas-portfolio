@@ -8,7 +8,9 @@ const Projects = () => {
    return (
       <section id="projects">
          <div className="container">
-            <h2 data-aos="slide-to-left">{t('my_projects')}</h2>
+            <h2 className="title" data-aos="slide-to-left">
+               {t('my_projects')}
+            </h2>
             <div className="projects__container">
                <Project
                   repo="https://github.com/thomasluizon/react-calculator"

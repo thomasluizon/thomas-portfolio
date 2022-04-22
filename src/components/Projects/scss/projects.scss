@@ -1,18 +1,13 @@
 #projects {
    height: 100%;
    padding: 10rem 0;
+
    .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2rem;
-
-      h2 {
-         transition: var(--animate-duration);
-         font-weight: lighter;
-         font-size: 2.5rem;
-      }
 
       .projects__container {
          display: grid;

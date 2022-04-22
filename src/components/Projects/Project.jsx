@@ -11,7 +11,7 @@ const Project = props => {
             <p>{props.desc}</p>
             <div className="project__btns">
                <a target="_blank" href={props.repo}>
-                  <i class="bi bi-github"></i>
+                  <i className="bi bi-github"></i>
                   {t('repo')}
                </a>
                <a target="_blank" href={props.demo}>

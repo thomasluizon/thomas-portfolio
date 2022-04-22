@@ -1,0 +1,27 @@
+import { useTranslation } from 'react-i18next';
+import './css/contact.css';
+import Info from './Info';
+import Form from './Form';
+
+const Contact = () => {
+   const { t } = useTranslation();
+
+   return (
+      <section id="contact">
+         <div className="container">
+            <h2 className="title" data-aos="slide-to-left">
+               {t('contact')}
+            </h2>
+            <p className="contact__desc" data-aos="slide-to-left">
+               {t('contact_desc')}
+            </p>
+            <div className="contact__form-wrapper">
+               <Info />
+               <Form />
+            </div>
+         </div>
+      </section>
+   );
+};
+
+export default Contact;
