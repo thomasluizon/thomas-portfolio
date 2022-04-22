@@ -2,6 +2,7 @@
   background-color: black;
   height: 20vh;
   width: 100%;
+  margin-top: 2rem;
 }
 .footer .container {
   display: flex;
