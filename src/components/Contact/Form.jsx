@@ -5,7 +5,8 @@ import './css/contact.css';
 const Form = () => {
    const { t } = useTranslation();
    const [submitted, setSubmitted] = useState(false);
-   const FORM_ENDPOINT = 'https://formsubmit.co/thomaslrgregorio@gmail.com';
+   const FORM_ENDPOINT =
+      'https://formsubmit.co/9633e2a7b42bf991b16326ef7a36b729';
 
    const handleSubmit = () => {
       setTimeout(() => {
