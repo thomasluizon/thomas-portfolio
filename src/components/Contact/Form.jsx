@@ -5,8 +5,7 @@ import './css/contact.css';
 const Form = () => {
    const { t } = useTranslation();
    const [submitted, setSubmitted] = useState(false);
-   const FORM_ENDPOINT =
-      'https://public.herotofu.com/v1/30f346f0-c1f9-11ec-abfb-2b5c80ae2a8a';
+   const FORM_ENDPOINT = 'https://formsubmit.co/thomaslrgregorio@gmail.com';
 
    const handleSubmit = () => {
       setTimeout(() => {
