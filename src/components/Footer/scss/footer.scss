@@ -1,13 +1,18 @@
 .footer {
    background-color: black;
-   height: 20vh;
+   min-height: 20vh;
    width: 100%;
-   margin-top: 2rem;
+   margin-top: 3rem;
+   padding: 1.5rem 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
    .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 100%;
 
       .footer_socials {
          display: flex;
@@ -32,7 +37,7 @@
 
 @media screen and (max-width: 350px) {
    .footer {
-      height: 30vh;
+      min-height: 30vh;
       .container .footer_socials {
          flex-direction: column;
       }

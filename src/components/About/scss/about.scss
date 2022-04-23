@@ -56,3 +56,9 @@
       }
    }
 }
+
+@media screen and (max-width: 375px) {
+   #about .container .about__desc p {
+      font-size: 1rem;
+   }
+}

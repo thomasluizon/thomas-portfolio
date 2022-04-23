@@ -83,4 +83,12 @@
     padding: 0;
     border: none;
   }
+}
+@media screen and (max-width: 300px) {
+  #projects .container .projects__project img {
+    max-width: 200px;
+  }
+  #projects .container .projects__project .project__btns a {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=projects.css.map */

@@ -63,4 +63,9 @@
   #home .container .home__profile img {
     width: 300px;
   }
+}
+@media screen and (max-width: 300px) {
+  #home .container .home__profile img {
+    width: 250px;
+  }
 }/*# sourceMappingURL=home.css.map */

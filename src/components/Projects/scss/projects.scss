@@ -100,3 +100,15 @@
       border: none;
    }
 }
+
+@media screen and (max-width: 300px) {
+   #projects .container .projects__project {
+      img {
+         max-width: 200px;
+      }
+
+      .project__btns a {
+         font-size: 0.8rem;
+      }
+   }
+}
