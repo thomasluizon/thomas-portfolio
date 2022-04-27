@@ -16,24 +16,22 @@
   text-align: center;
 }
 #projects .container .projects__container {
-  display: grid;
+  display: flex;
   width: 100%;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  flex-wrap: wrap;
 }
 #projects .container .projects__project {
   --animate-duration: 1s;
   transition: var(--animate-duration);
   cursor: pointer;
-  padding: 1.5rem 2.5rem;
-  border: 0.2rem solid white;
-  border-radius: 0.5rem;
-  width: 100%;
-  max-height: 600px;
+  padding: 3rem 2.5rem;
+  width: 50%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
 }
 #projects .container .projects__project:hover {
