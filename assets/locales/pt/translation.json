@@ -20,6 +20,7 @@
    "notes_desc": "Aplicativo de notas interativo, com troca de tema, pesquisa por Regex e gerenciamento de estado e memória.",
    "contact": "Entre em contato",
    "contact_desc": "Estou disponível para transformar seu projeto dos sonhos em realidade, caso queira solicitar um serviço ou entrar em contato utilize o formulário.",
+   "ipaddress_desc": "Software que mostra a localização baseado no IP de sua internet. Feito com React e chamadas de API",
    "brasil": "Brasil",
    "full_name": "Nome completo",
    "phone": "Celular",

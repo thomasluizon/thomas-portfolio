@@ -20,6 +20,7 @@
    "notes_desc": "Interactive notes app with theme switching, Regex search, state management and local storage saving.",
    "contact": "Get in touch",
    "contact_desc": "I am available to turn your dream project into reality, if you want to request a service or get in touch, use the form.",
+   "ipaddress_desc": "Software that shows your location based on your internet's IP address. Made with React and API calls",
    "brasil": "Brazil",
    "full_name": "Full name",
    "phone": "Phone",

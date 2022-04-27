@@ -24,6 +24,12 @@ const Projects = () => {
                   desc={t('notes_desc')}
                   img="https://github.com/thomasluizon/react-notes-app/raw/main/Screenshot.png"
                />
+               <Project
+                  repo="https://github.com/thomasluizon/ip-address-tracker-react"
+                  demo="https://ip-address-tracker-react-thomas.vercel.app/"
+                  desc={t('ipaddress_desc')}
+                  img="https://github.com/thomasluizon/ip-address-tracker-react/blob/main/src/assets/ScreenshotMobile.png?raw=true"
+               />
             </div>
          </div>
       </section>
