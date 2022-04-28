@@ -1,4 +1,3 @@
-import './css/projects.css';
 import { useTranslation } from 'react-i18next';
 
 const Project = props => {

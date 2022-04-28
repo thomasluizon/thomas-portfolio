@@ -5,8 +5,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import App from './views/App';
-import './reset.css';
-import './index.css';
+import './styles/css/index.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'flag-icon-css/css/flag-icons.min.css';
 

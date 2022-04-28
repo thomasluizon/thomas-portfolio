@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import './css/contact.css';
 
 const Info = () => {
    const { t } = useTranslation();

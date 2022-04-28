@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import './css/contact.css';
+
 import Info from './Info';
 import Form from './Form';
 

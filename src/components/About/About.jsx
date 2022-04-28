@@ -1,4 +1,3 @@
-import './css/about.css';
 import { useTranslation } from 'react-i18next';
 import codingGif from '../../../assets/imgs/coding.gif';
 

@@ -1,4 +1,3 @@
-import './css/header.css';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import Lang from './Lang';
