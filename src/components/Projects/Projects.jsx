@@ -29,6 +29,12 @@ const Projects = () => {
                   desc={t('ipaddress_desc')}
                   img="https://github.com/thomasluizon/ip-address-tracker-react/blob/main/src/assets/ScreenshotMobile.png?raw=true"
                />
+               <Project
+                  repo="https://github.com/thomasluizon/url-shortening-api-react"
+                  demo="https://url-shortening-api-react.vercel.app/"
+                  desc={t('linkshortener_desc')}
+                  img="https://github.com/thomasluizon/url-shortening-api-react/raw/main/src/assets/Screenshots/Screenshot_2-mobile.png"
+               />
             </div>
          </div>
       </section>

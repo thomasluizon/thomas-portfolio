@@ -21,6 +21,7 @@
    "contact": "Entre em contato",
    "contact_desc": "Estou disponível para transformar seu projeto dos sonhos em realidade, caso queira solicitar um serviço ou entrar em contato utilize o formulário.",
    "ipaddress_desc": "Software que mostra a localização baseado no IP de sua internet. Feito com React e chamadas de API",
+   "linkshortener_desc": "Site encurtador de URLs. Feito com React e chamadas de API",
    "brasil": "Brasil",
    "full_name": "Nome completo",
    "phone": "Celular",
