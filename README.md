@@ -1,7 +1,5 @@
 # My portfolio!
 
-https://img.shields.io/github/license/thomasluizon/thomas-portfolio
-
 ![GitHub](https://img.shields.io/github/license/thomasluizon/thomas-portfolio?color=purple&logo=github)
 
 Hello! Welcome to my portfolio! 🖥️ <br/>
