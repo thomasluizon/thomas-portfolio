@@ -1,6 +1,8 @@
-## My portfolio!
+# My portfolio!
 
-Portfolio made with HTML, CSS, Sass, JavaScript and React.
+Hello! Welcome to my portfolio! 🖥️
+
+Here i expose my web skills and personal projects, feel free to check it out and use it as an inspiration to your own portfolio!
 
 Available in English and Portuguese.
 
