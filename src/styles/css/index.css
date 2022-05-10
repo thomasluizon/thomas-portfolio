@@ -330,13 +330,30 @@ a {
   }
 }
 @media screen and (max-width: 520px) {
+  #home .container .home__intro {
+    text-align: center;
+  }
+  #home .container .home__intro .home__intro__greetings {
+    font-size: 1.2rem;
+  }
+  #home .container .home__intro .home__intro__name {
+    font-size: 2rem;
+  }
+  #home .container .home__intro .home__intro__presentation {
+    font-size: 1.5rem;
+  }
   #home .container .home__profile img {
     width: 300px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 375px) {
   #home .container .home__profile img {
     width: 250px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #home .container .home__profile img {
+    width: 200px;
   }
 }
 #about .container {
@@ -381,8 +398,15 @@ a {
 @media screen and (max-width: 900px) {
   #about .container {
     justify-content: center;
+    text-align: center;
   }
-  #about .container .about__img img {
+  #about .container .about__desc {
+    max-width: 400px;
+  }
+  #about .container .about__desc p {
+    text-align: center;
+  }
+  #about .container .about__img {
     display: none;
   }
 }
@@ -418,7 +442,7 @@ a {
   transition: var(--animate-duration);
   cursor: pointer;
   padding: 3rem 2.5rem;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -675,7 +699,7 @@ html {
 
 body {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(58, 10, 70) 35%, rgb(47, 1, 45) 100%);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 section {
@@ -683,6 +707,7 @@ section {
   height: 100%;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 
 .container {

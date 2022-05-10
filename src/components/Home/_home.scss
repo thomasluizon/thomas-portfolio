@@ -71,13 +71,35 @@
 }
 
 @media screen and (max-width: 520px) {
+	#home .container {
+		.home__intro {
+			text-align: center;
+
+			.home__intro__greetings {
+				font-size: 1.2rem;
+			}
+			.home__intro__name {
+				font-size: 2rem;
+			}
+			.home__intro__presentation {
+				font-size: 1.5rem;
+			}
+		}
+
+		.home__profile img {
+			width: 300px;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
 	#home .container .home__profile img {
-		width: 300px;
+		width: 250px;
 	}
 }
 
 @media screen and (max-width: 300px) {
 	#home .container .home__profile img {
-		width: 250px;
+		width: 200px;
 	}
 }

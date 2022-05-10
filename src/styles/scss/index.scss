@@ -33,7 +33,7 @@ body {
 		rgba(58, 10, 70, 1) 35%,
 		rgba(47, 1, 45, 1) 100%
 	);
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 }
 
 section {
@@ -41,6 +41,7 @@ section {
 	height: 100%;
 	display: grid;
 	place-items: center;
+	overflow: hidden;
 }
 
 .container {
