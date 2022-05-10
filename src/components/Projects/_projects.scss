@@ -1,111 +1,113 @@
 #projects {
-   height: 100%;
-   padding: 10rem 0;
+	padding: 10rem 0;
 
-   .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
 
-      .projects__title {
-         transition: var(--animate-duration);
-         font-weight: lighter;
-         font-size: 2.5rem;
-         text-align: center;
-      }
+		.projects__title {
+			transition: var(--animate-duration);
+			font-weight: lighter;
+			font-size: 2.5rem;
+			text-align: center;
+		}
 
-      .projects__container {
-         display: flex;
-         width: 100%;
-         gap: 1rem;
-         flex-wrap: wrap;
-      }
+		.projects__container {
+			display: flex;
+			width: 100%;
+			gap: 1rem;
+			flex-wrap: wrap;
+		}
 
-      .projects__project {
-         --animate-duration: 1s;
-         transition: var(--animate-duration);
-         cursor: pointer;
+		.projects__project {
+			--animate-duration: 1s;
+			transition: var(--animate-duration);
+			cursor: pointer;
 
-         padding: 3rem 2.5rem;
+			padding: 3rem 2.5rem;
 
-         width: 50%;
-         height: 100%;
-         margin: 0 auto;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         gap: 1rem;
+			width: 50%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 1rem;
 
-         &:hover {
-            border-color: var(--main-color);
-            transform: scale(1.02);
-         }
+			&:hover {
+				border-color: var(--main-color);
+				transform: scale(1.02);
+			}
 
-         img {
-            border-radius: 0.5rem;
-            max-height: 80%;
-            max-width: 100%;
-            width: auto;
-            height: auto;
-            margin: 0 auto;
-         }
+			img {
+				border-radius: 0.5rem;
+				max-height: 80%;
+				max-width: 100%;
+				width: auto;
+				height: auto;
+				margin: 0 auto;
+			}
 
-         .project__about {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-         }
+			.project__about {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+			}
 
-         .project__btns {
-            display: flex;
-            justify-content: space-between;
-            gap: 1rem;
-            width: 100%;
-            a {
-               display: flex;
-               align-items: center;
-               gap: 0.5rem;
-               background: var(--main-color);
-               padding: 0.5rem;
-               border-radius: 0.25rem;
-               transition: var(--transition-duration) transform ease-in-out;
-               &:hover {
-                  transform: scale(1.05);
-               }
-            }
-         }
-      }
-   }
+			.project__btns {
+				display: flex;
+				justify-content: space-between;
+				gap: 1rem;
+				width: 100%;
+				a {
+					color: white;
+					&:visited {
+						color: white;
+					}
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					background: var(--main-color);
+					padding: 0.5rem;
+					border-radius: 0.25rem;
+					transition: var(--transition-duration) transform ease-in-out;
+					&:hover {
+						transform: scale(1.05);
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 900px) {
-   #projects {
-      .container {
-         .projects__container {
-            grid-template-columns: none;
-            gap: 2rem;
-         }
-      }
-   }
+	#projects {
+		.container {
+			.projects__container {
+				grid-template-columns: none;
+				gap: 2rem;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 500px) {
-   #projects .container .projects__project {
-      padding: 0;
-      border: none;
-   }
+	#projects .container .projects__project {
+		padding: 0;
+		border: none;
+	}
 }
 
 @media screen and (max-width: 300px) {
-   #projects .container .projects__project {
-      img {
-         max-width: 200px;
-      }
+	#projects .container .projects__project {
+		img {
+			max-width: 200px;
+		}
 
-      .project__btns a {
-         font-size: 0.8rem;
-      }
-   }
+		.project__btns a {
+			font-size: 0.8rem;
+		}
+	}
 }

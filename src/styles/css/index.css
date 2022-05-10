@@ -297,6 +297,7 @@ a {
 }
 #home .container .home__profile {
   transition: var(--animate-duration);
+  z-index: -1;
 }
 #home .container .home__profile img {
   border-radius: 50%;
@@ -391,7 +392,6 @@ a {
   }
 }
 #projects {
-  height: 100%;
   padding: 10rem 0;
 }
 #projects .container {
@@ -419,7 +419,6 @@ a {
   cursor: pointer;
   padding: 3rem 2.5rem;
   width: 50%;
-  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -450,6 +449,7 @@ a {
   width: 100%;
 }
 #projects .container .projects__project .project__btns a {
+  color: white;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -457,6 +457,9 @@ a {
   padding: 0.5rem;
   border-radius: 0.25rem;
   transition: var(--transition-duration) transform ease-in-out;
+}
+#projects .container .projects__project .project__btns a:visited {
+  color: white;
 }
 #projects .container .projects__project .project__btns a:hover {
   transform: scale(1.05);
@@ -676,7 +679,10 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 
 .container {

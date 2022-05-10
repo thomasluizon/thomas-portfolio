@@ -1,134 +1,134 @@
 .header {
-   position: fixed;
-   top: 0;
-   width: 100%;
-   z-index: 100;
-   background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.2);
 
-   .container {
-      .header__drawer-btn {
-         display: none;
-         cursor: pointer;
-         transition: var(--transition-duration) all ease-in-out;
-         transition-property: color, transform;
-         font-size: 1.5rem;
-         &:hover {
-            color: var(--main-color);
-            transform: translateX(2px);
-         }
-      }
+	.container {
+		.header__drawer-btn {
+			display: none;
+			cursor: pointer;
+			transition: var(--transition-duration) all ease-in-out;
+			transition-property: color, transform;
+			font-size: 1.5rem;
+			&:hover {
+				color: var(--main-color);
+				transform: translateX(2px);
+			}
+		}
 
-      --padding-y-header: 2.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: var(--padding-y-header);
-      padding-bottom: var(--padding-y-header);
+		--padding-y-header: 2.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: var(--padding-y-header);
+		padding-bottom: var(--padding-y-header);
 
-      .disappear {
-         transform: translateY(-300%);
-      }
+		.disappear {
+			transform: translateY(-300%);
+		}
 
-      .header__title {
-         font-size: 1.2rem;
-         cursor: pointer;
-         transition: var(--transition-duration) all ease-in-out;
-         transition-property: color, transform;
+		.header__title {
+			font-size: 1.2rem;
+			cursor: pointer;
+			transition: var(--transition-duration) all ease-in-out;
+			transition-property: color, transform;
 
-         &:hover {
-            transform: translateX(2px);
-            color: var(--main-color);
-         }
-      }
+			&:hover {
+				transform: translateX(2px);
+				color: var(--main-color);
+			}
+		}
 
-      .header__nav {
-         --nav-gap: 2.5rem;
-         display: flex;
-         gap: var(--nav-gap);
-         position: relative;
-      }
+		.header__nav {
+			--nav-gap: 2.5rem;
+			display: flex;
+			gap: var(--nav-gap);
+			position: relative;
+		}
 
-      .header__nav__menu {
-         display: flex;
-         gap: var(--nav-gap);
+		.header__nav__menu {
+			display: flex;
+			gap: var(--nav-gap);
 
-         .active {
-            color: var(--active-color);
-            transform: scale(1.2);
-         }
+			.active {
+				color: var(--active-color);
+				transform: scale(1.2);
+			}
 
-         li {
-            transition: var(--transition-duration) transform ease-in-out;
+			li {
+				transition: var(--transition-duration) transform ease-in-out;
 
-            a {
-               transition: var(--transition-duration) all ease-in-out;
-               transition-property: color, transform;
-               display: inline-block;
-            }
+				a {
+					transition: var(--transition-duration) all ease-in-out;
+					transition-property: color, transform;
+					display: inline-block;
+				}
 
-            &:hover {
-               a {
-                  color: var(--main-color);
-               }
-               transform: translateX(2px);
-            }
-         }
-      }
+				&:hover {
+					a {
+						color: var(--main-color);
+					}
+					transform: translateX(2px);
+				}
+			}
+		}
 
-      .header__nav__lang-btn {
-         transition: var(--transition-duration) transform ease-in-out;
+		.header__nav__lang-btn {
+			transition: var(--transition-duration) transform ease-in-out;
 
-         i {
-            transition: var(--transition-duration) color ease-in-out;
-         }
+			i {
+				transition: var(--transition-duration) color ease-in-out;
+			}
 
-         &:hover {
-            transform: translateX(2px);
-            i {
-               color: var(--main-color);
-            }
-         }
-      }
+			&:hover {
+				transform: translateX(2px);
+				i {
+					color: var(--main-color);
+				}
+			}
+		}
 
-      .header__nav__lang-menu {
-         background: white;
-         position: absolute;
-         top: 2rem;
-         right: 0;
-         padding: 0.3rem;
-         display: flex;
-         flex-direction: column;
-         gap: 0.5rem;
-         border-radius: 0.25rem;
-         transition: var(--transition-duration) transform ease-in-out;
+		.header__nav__lang-menu {
+			background: white;
+			position: absolute;
+			top: 2rem;
+			right: 0;
+			padding: 0.3rem;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			border-radius: 0.25rem;
+			transition: var(--transition-duration) transform ease-in-out;
 
-         button {
-            color: black;
-            display: flex;
-            gap: 5px;
-            transition: var(--transition-duration) all ease-in-out;
-            transition-property: color, transform;
-            &:hover {
-               transform: translateX(2px);
-               color: var(--main-color);
-            }
-         }
-      }
-   }
+			button {
+				color: black;
+				display: flex;
+				gap: 5px;
+				transition: var(--transition-duration) all ease-in-out;
+				transition-property: color, transform;
+				&:hover {
+					transform: translateX(2px);
+					color: var(--main-color);
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 900px) {
-   .header {
-      position: static;
+	.header {
+		position: static;
 
-      .container {
-         .header__drawer-btn {
-            display: block;
-         }
+		.container {
+			.header__drawer-btn {
+				display: block;
+			}
 
-         .header__nav__menu {
-            display: none;
-         }
-      }
-   }
+			.header__nav__menu {
+				display: none;
+			}
+		}
+	}
 }
