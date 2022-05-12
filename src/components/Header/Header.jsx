@@ -46,9 +46,7 @@ const Header = props => {
 
 		return () => {
 			window.removeEventListener('click', langClick);
-			window.removeEventListener('scroll', () =>
-				scroll(sectionsAll.current)
-			);
+			window.removeEventListener('scroll', () => scroll(sectionsAll.current));
 		};
 	}, []);
 
