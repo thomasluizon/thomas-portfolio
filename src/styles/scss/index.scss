@@ -36,6 +36,12 @@ body {
 	overflow-x: hidden;
 }
 
+@media screen and (max-width: 900px) {
+	body.scroll {
+		overflow-y: hidden;
+	}
+}
+
 section {
 	min-height: 100vh;
 	height: 100%;

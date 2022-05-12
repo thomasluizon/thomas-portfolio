@@ -1,3 +1,8 @@
+.active {
+	color: var(--active-color);
+	transform: scale(1.2);
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -6,6 +11,12 @@
 	background-color: rgba(0, 0, 0, 0.2);
 
 	.container {
+		--padding-y-header: 2.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: var(--padding-y-header);
+		padding-bottom: var(--padding-y-header);
 		.header__drawer-btn {
 			display: none;
 			cursor: pointer;
@@ -17,13 +28,6 @@
 				transform: translateX(2px);
 			}
 		}
-
-		--padding-y-header: 2.5rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding-top: var(--padding-y-header);
-		padding-bottom: var(--padding-y-header);
 
 		.disappear {
 			transform: translateY(-300%);
@@ -44,6 +48,7 @@
 		.header__nav {
 			--nav-gap: 2.5rem;
 			display: flex;
+			align-items: center;
 			gap: var(--nav-gap);
 			position: relative;
 		}
@@ -51,11 +56,6 @@
 		.header__nav__menu {
 			display: flex;
 			gap: var(--nav-gap);
-
-			.active {
-				color: var(--active-color);
-				transform: scale(1.2);
-			}
 
 			li {
 				transition: var(--transition-duration) transform ease-in-out;
@@ -117,18 +117,77 @@
 	}
 }
 
+.header__nav-mobile {
+	transform: translateX(-100%);
+	position: fixed;
+	background-color: var(--bg-color);
+	width: 100vw;
+	height: 100vh;
+	color: white;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	transition: var(--transition-duration) transform;
+
+	ul {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		gap: 3rem;
+		li {
+			transition: var(--transition-duration) transform ease-in-out;
+			a {
+				font-size: 2rem;
+				transition: var(--transition-duration) all ease-in-out;
+				transition-property: color, transform;
+				display: inline-block;
+			}
+			&:hover {
+				a {
+					color: var(--main-color);
+				}
+				transform: translateX(2px);
+			}
+		}
+	}
+
+	.header__nav-mobile-close {
+		position: absolute;
+		top: 3rem;
+		right: 3rem;
+		i {
+			font-size: 1.8rem;
+			transition: var(--transition-duration) color;
+			&:hover {
+				color: var(--main-color);
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.header {
-		position: static;
-
 		.container {
 			.header__drawer-btn {
 				display: block;
+				i {
+					transition: var(--transition-duration) color;
+					&:hover {
+						color: var(--main-color);
+					}
+				}
 			}
 
 			.header__nav__menu {
 				display: none;
 			}
 		}
+	}
+	.header__nav-mobile.show {
+		transform: translateX(0);
 	}
 }
