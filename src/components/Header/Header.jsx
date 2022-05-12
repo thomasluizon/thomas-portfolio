@@ -7,7 +7,8 @@ const Header = props => {
 	const [langMenu, setLangMenu] = useState(false);
 
 	const langClick = e => {
-		if (e.target != document.querySelector('#lang')) {
+		const icon = document.querySelector('#lang');
+		if (e.target != icon) {
 			setLangMenu(false);
 		}
 	};
@@ -40,12 +41,12 @@ const Header = props => {
 		document
 			.querySelectorAll('section')
 			.forEach(section => sectionsAll.current.push(section));
-		window.addEventListener('click', langClick);
+		window.addEventListener('click', e => langClick(e));
 
 		window.addEventListener('scroll', () => scroll(sectionsAll.current));
 
 		return () => {
-			window.removeEventListener('click', langClick);
+			window.removeEventListener('click', e => langClick(e));
 			window.removeEventListener('scroll', () => scroll(sectionsAll.current));
 		};
 	}, []);
