@@ -11,9 +11,9 @@
 		.show-more {
 			transition: 2s all;
 			background: var(--main-color);
-			padding: 1rem;
-			width: 150px;
+			padding: 1rem 3rem;
 			border-radius: 1rem;
+			margin-top: 3rem;
 			&:hover {
 				filter: brightness(0.9);
 			}
