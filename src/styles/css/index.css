@@ -484,6 +484,16 @@ a {
   align-items: center;
   gap: 2rem;
 }
+#projects .container .show-more {
+  transition: 2s all;
+  background: var(--main-color);
+  padding: 1rem;
+  width: 150px;
+  border-radius: 1rem;
+}
+#projects .container .show-more:hover {
+  filter: brightness(0.9);
+}
 #projects .container .projects__title {
   transition: var(--animate-duration);
   font-weight: lighter;
