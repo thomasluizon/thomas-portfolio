@@ -50,11 +50,6 @@ const Header = props => {
 		window.addEventListener('click', e => langClick(e));
 
 		window.addEventListener('scroll', () => scroll(sectionsAll.current));
-
-		return () => {
-			window.removeEventListener('click', e => langClick(e));
-			window.removeEventListener('scroll', () => scroll(sectionsAll.current));
-		};
 	}, []);
 
 	useEffect(() => {
