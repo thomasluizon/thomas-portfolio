@@ -22,7 +22,7 @@
 	"contact_desc": "Estou disponível para transformar seu projeto dos sonhos em realidade, caso queira solicitar um serviço ou entrar em contato utilize o formulário.",
 	"ipaddress_desc": "Software que mostra a localização baseado no IP de sua internet. Feito com React e chamadas de API",
 	"linkshortener_desc": "Site encurtador de URLs. Feito com React e chamadas de API",
-	"nextcrud_desc": "Aplicação de registro de usuários (CRUD) feito com Next.js, TypeScript, Tailwind e integração com banco de dados firestore",
+	"bookscrud_desc": "Aplicação de registro de livros (CRUD) feito com React e Sass no front-end, e Node.js, Express e MySQL no back-end.",
 	"show_more": "Mostrar mais",
 	"show_less": "Mostrar menos",
 	"brasil": "Brasil",

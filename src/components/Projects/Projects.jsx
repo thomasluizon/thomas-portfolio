@@ -20,10 +20,10 @@ const Projects = () => {
 						img="https://github.com/thomasluizon/url-shortening-api-react/raw/main/src/assets/Screenshots/Screenshot_2-mobile.png"
 					/>
 					<Project
-						repo="https://github.com/thomasluizon/next-crud"
-						demo="https://next-crud-thomas.vercel.app/"
-						desc={t('nextcrud_desc')}
-						img="https://github.com/thomasluizon/next-crud/raw/main/src/Screenshot.png"
+						repo="https://github.com/thomasluizon/books-crud-front"
+						demo="https://books-crud-front.vercel.app"
+						desc={t('bookscrud_desc')}
+						img="https://github.com/thomasluizon/books-crud-front/blob/main/assets/Screenshot.png?raw=true"
 					/>
 
 					{showMore && (
