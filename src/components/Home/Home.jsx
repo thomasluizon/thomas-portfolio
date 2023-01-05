@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
-import profileImage from '../../../assets/imgs/profile-image.png';
+import { useTranslation } from 'react-i18next'
+import profileImage from '../../../assets/imgs/profile-image.png'
 
 const Home = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 
 	return (
 		<section id="home">
@@ -26,7 +26,7 @@ const Home = () => {
 				</div>
 			</div>
 		</section>
-	);
-};
+	)
+}
 
-export default Home;
+export default Home

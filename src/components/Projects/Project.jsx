@@ -15,7 +15,7 @@ const Project = props => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Project;
+export default Project

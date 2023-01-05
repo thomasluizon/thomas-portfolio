@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
-import Info from './Info';
-import Form from './Form';
+import Info from './Info'
+import Form from './Form'
 
 const Contact = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 
 	return (
 		<section id="contact">
@@ -21,7 +21,7 @@ const Contact = () => {
 				</div>
 			</div>
 		</section>
-	);
-};
+	)
+}
 
-export default Contact;
+export default Contact

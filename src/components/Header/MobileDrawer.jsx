@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 const MobileDrawer = props => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 	const handleDrawer = () => {
-		props.setMobileDrawer(!props.mobileDrawer);
-	};
+		props.setMobileDrawer(!props.mobileDrawer)
+	}
 
 	return (
 		<nav className={`header__nav-mobile ${props.show}`}>
@@ -28,7 +28,7 @@ const MobileDrawer = props => {
 				</li>
 			</ul>
 		</nav>
-	);
-};
+	)
+}
 
-export default MobileDrawer;
+export default MobileDrawer

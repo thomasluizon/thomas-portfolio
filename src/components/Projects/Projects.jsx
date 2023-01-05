@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
-import Project from './Project';
-import { useState } from 'react';
+import { useTranslation } from 'react-i18next'
+import Project from './Project'
+import { useState } from 'react'
 
 const Projects = () => {
-	const { t } = useTranslation();
-	const [showMore, setShowMore] = useState(false);
+	const { t } = useTranslation()
+	const [showMore, setShowMore] = useState(false)
 
 	return (
 		<section id="projects">
@@ -59,7 +59,7 @@ const Projects = () => {
 				</button>
 			</div>
 		</section>
-	);
-};
+	)
+}
 
-export default Projects;
+export default Projects

@@ -1,21 +1,21 @@
-import { useTranslation } from 'react-i18next';
-import codingGif from '../../../assets/imgs/coding.gif';
+import { useTranslation } from 'react-i18next'
+import codingGif from '../../../assets/imgs/coding.gif'
 
 const About = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 
 	const getAge = () => {
-		const today = new Date();
-		const birthDate = new Date('05/28/2004');
-		let age = today.getFullYear() - birthDate.getFullYear();
-		const month = today.getMonth() - birthDate.getMonth();
+		const today = new Date()
+		const birthDate = new Date('05/28/2004')
+		let age = today.getFullYear() - birthDate.getFullYear()
+		const month = today.getMonth() - birthDate.getMonth()
 
 		if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
-			age--;
+			age--
 		}
 
-		return age;
-	};
+		return age
+	}
 
 	return (
 		<section id="about">
@@ -34,7 +34,7 @@ const About = () => {
 				</div>
 			</div>
 		</section>
-	);
-};
+	)
+}
 
-export default About;
+export default About

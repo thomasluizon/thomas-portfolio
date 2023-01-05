@@ -1,62 +1,62 @@
-import { useTranslation } from 'react-i18next';
-import { useState, useEffect, useRef } from 'react';
-import Lang from './Lang';
-import MobileDrawer from './MobileDrawer';
+import { useTranslation } from 'react-i18next'
+import { useState, useEffect, useRef } from 'react'
+import Lang from './Lang'
+import MobileDrawer from './MobileDrawer'
 
 const Header = props => {
-	const { t } = useTranslation();
-	const [langMenu, setLangMenu] = useState(false);
-	const [mobileDrawer, setMobileDrawer] = useState(false);
+	const { t } = useTranslation()
+	const [langMenu, setLangMenu] = useState(false)
+	const [mobileDrawer, setMobileDrawer] = useState(false)
 
 	const langClick = e => {
-		const icon = document.querySelector('#lang');
+		const icon = document.querySelector('#lang')
 		if (e.target != icon) {
-			setLangMenu(false);
+			setLangMenu(false)
 		}
-	};
+	}
 
 	const scroll = sections => {
-		const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4;
+		const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 		sections.forEach(section => {
-			const sectionTop = section.offsetTop;
-			const sectionHeight = section.offsetHeight;
-			const sectionId = section.getAttribute('id');
+			const sectionTop = section.offsetTop
+			const sectionHeight = section.offsetHeight
+			const sectionId = section.getAttribute('id')
 
-			const checkpointStart = checkpoint >= sectionTop;
-			const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
+			const checkpointStart = checkpoint >= sectionTop
+			const checkpointEnd = checkpoint <= sectionTop + sectionHeight
 
 			if (checkpointStart && checkpointEnd) {
 				document
 					.querySelectorAll(`li a[href*='${sectionId}']`)
 					.forEach(link => {
-						link.classList.add('active');
-					});
+						link.classList.add('active')
+					})
 			} else {
 				document
 					.querySelectorAll(`li a[href*='${sectionId}']`)
 					.forEach(link => {
-						link.classList.remove('active');
-					});
+						link.classList.remove('active')
+					})
 			}
-		});
-	};
+		})
+	}
 
-	const sectionsAll = useRef([]);
+	const sectionsAll = useRef([])
 
 	useEffect(() => {
 		document
 			.querySelectorAll('section')
-			.forEach(section => sectionsAll.current.push(section));
-		window.addEventListener('click', e => langClick(e));
+			.forEach(section => sectionsAll.current.push(section))
+		window.addEventListener('click', e => langClick(e))
 
-		window.addEventListener('scroll', () => scroll(sectionsAll.current));
-	}, []);
+		window.addEventListener('scroll', () => scroll(sectionsAll.current))
+	}, [])
 
 	useEffect(() => {
 		mobileDrawer
 			? document.body.classList.add('scroll')
-			: document.body.classList.remove('scroll');
-	}, [mobileDrawer]);
+			: document.body.classList.remove('scroll')
+	}, [mobileDrawer])
 
 	return (
 		<>
@@ -107,7 +107,7 @@ const Header = props => {
 				show={mobileDrawer ? 'show' : ''}
 			/>
 		</>
-	);
-};
+	)
+}
 
-export default Header;
+export default Header
