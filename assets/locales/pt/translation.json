@@ -16,7 +16,7 @@
 	"gif": "Gif animado de um menino programando.",
 	"my_projects": "Meus projetos",
 	"demo": "Demonstração",
-	"calculator_desc": "Calculadora funcional feita com HTML, CSS, JavaScript e React.",
+	"publink_desc": "Rede social de divulgação de arte desenvolvida com Next.js e Typescript no front-end, e C#, ASP.NET e MySQL no back-end.",
 	"notes_desc": "Aplicativo de notas interativo, com troca de tema, pesquisa por Regex e gerenciamento de estado e memória.",
 	"contact": "Entre em contato",
 	"contact_desc": "Estou disponível para transformar seu projeto dos sonhos em realidade, caso queira solicitar um serviço ou entrar em contato utilize o formulário.",

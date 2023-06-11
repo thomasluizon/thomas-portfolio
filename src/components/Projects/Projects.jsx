@@ -14,26 +14,20 @@ const Projects = () => {
 				</h2>
 				<div className="projects__container">
 					<Project
+						repo="https://github.com/thomasluizon/publink-front"
+						demo="https://publink.vercel.app"
+						desc={t('publink_desc')}
+						img="https://github.com/thomasluizon/publink-front/raw/main/public/imgs/Publink.jpeg"
+					/>
+					<Project
 						repo="https://github.com/thomasluizon/url-shortening-api-react"
 						demo="https://url-shortening-api-react.vercel.app/"
 						desc={t('linkshortener_desc')}
 						img="https://github.com/thomasluizon/url-shortening-api-react/raw/main/src/assets/Screenshots/Screenshot_2-mobile.png"
 					/>
-					<Project
-						repo="https://github.com/thomasluizon/books-crud-front"
-						demo="https://books-crud-front.vercel.app"
-						desc={t('bookscrud_desc')}
-						img="https://github.com/thomasluizon/books-crud-front/blob/main/assets/Screenshot.png?raw=true"
-					/>
 
 					{showMore && (
 						<>
-							<Project
-								repo="https://github.com/thomasluizon/react-calculator"
-								demo="https://react-calculator-thomas.vercel.app/"
-								desc={t('calculator_desc')}
-								img="https://github.com/thomasluizon/react-calculator/raw/main/src/assets/Screenshot.png"
-							/>
 							<Project
 								repo="https://github.com/thomasluizon/react-notes-app"
 								demo="https://react-notes-app-thomas.vercel.app/"
