@@ -1,10 +1,51 @@
 import { useTranslation } from 'react-i18next'
 import Project from './Project'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Projects = () => {
 	const { t } = useTranslation()
 	const [showMore, setShowMore] = useState(false)
+	const [projects, setProjects] = useState([])
+
+	useEffect(() => {
+		async function fetchRepositories() {
+			const token = import.meta.env.VITE_GITHUB_TOKEN
+			const authorization = `Bearer ${token}`
+			const apiUrl = 'https://api.github.com/user/repos'
+
+			const res = await fetch(apiUrl, {
+				method: 'GET',
+				headers: {
+					Authorization: authorization,
+				},
+			})
+
+			const json = await res.json()
+
+			const repos = json.filter(repo =>
+				repo.topics.includes('show-portfolio')
+			)
+
+			const projectArray = []
+
+			repos.forEach(repository => {
+				const repoUrl = repository.html_url
+
+				const obj = {
+					repo: repoUrl,
+					demo: repository.homepage,
+					desc: repository.description,
+					img: `${repoUrl}/blob/main/screenshot.jpeg?raw=true`,
+				}
+
+				projectArray.push(obj)
+			})
+
+			setProjects(projectArray)
+		}
+
+		fetchRepositories()
+	}, [])
 
 	return (
 		<section id="projects">
@@ -13,33 +54,35 @@ const Projects = () => {
 					{t('my_projects')}
 				</h2>
 				<div className="projects__container">
-					<Project
-						repo="https://github.com/thomasluizon/publink-front"
-						demo="https://publink.vercel.app"
-						desc={t('publink_desc')}
-						img="https://github.com/thomasluizon/publink-front/raw/main/public/imgs/Publink.jpeg"
-					/>
-					<Project
-						repo="https://github.com/thomasluizon/url-shortening-api-react"
-						demo="https://url-shortening-api-react.vercel.app/"
-						desc={t('linkshortener_desc')}
-						img="https://github.com/thomasluizon/url-shortening-api-react/raw/main/src/assets/Screenshots/Screenshot_2-mobile.png"
-					/>
+					{projects
+						.filter((p, i) => i < 2)
+						.map((project, i) => {
+							return (
+								<Project
+									repo={project.repo}
+									demo={project.demo}
+									desc={project.desc}
+									img={project.img}
+									key={project.repo}
+								/>
+							)
+						})}
 
 					{showMore && (
 						<>
-							<Project
-								repo="https://github.com/thomasluizon/react-notes-app"
-								demo="https://react-notes-app-thomas.vercel.app/"
-								desc={t('notes_desc')}
-								img="https://github.com/thomasluizon/react-notes-app/raw/main/Screenshot.png"
-							/>
-							<Project
-								repo="https://github.com/thomasluizon/ip-address-tracker-react"
-								demo="https://ip-address-tracker-react-thomas.vercel.app/"
-								desc={t('ipaddress_desc')}
-								img="https://github.com/thomasluizon/ip-address-tracker-react/blob/main/src/assets/ScreenshotMobile.png?raw=true"
-							/>
+							{projects
+								.filter((p, i) => i >= 2)
+								.map((project, i) => {
+									return (
+										<Project
+											repo={project.repo}
+											demo={project.demo}
+											desc={project.desc}
+											img={project.img}
+											key={project.repo}
+										/>
+									)
+								})}
 						</>
 					)}
 				</div>
